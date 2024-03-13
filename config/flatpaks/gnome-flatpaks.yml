@@ -24,3 +24,5 @@ modules:
         - org.gnome.Totem
         - org.gnome.Weather
         - com.raggesilver.BlackBox
+        - ca.desrt.dconf-editor
+      
