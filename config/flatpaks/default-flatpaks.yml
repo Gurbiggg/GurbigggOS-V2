@@ -1,0 +1,49 @@
+modules:
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      # repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - org.mozilla.firefox
+        - org.mozilla.Thunderbird
+        - it.mijorus.gearlever
+        - org.kicad.KiCad
+        - org.gnome.Boxes
+        # - org.DolphinEmu.dolphin-emu
+        - com.github.flxzt.rnote
+        - com.obsproject.Studio
+        - org.videolan.VLC
+        - org.inkscape.Inkscape
+        - org.blender.Blender
+        - org.kde.krita
+        - org.gimp.GIMP
+        - org.libreoffice.LibreOffice
+        - com.github.tchx84.Flatseal
+        - com.usebottles.bottles
+        - io.missioncenter.MissionCenter
+        - io.github.flattool.Warehouse
+        - com.discordapp.Discord
+        - org.libretro.RetroArch
+        - net.lutris.Lutris
+        - com.valvesoftware.Steam
+        - io.podman_desktop.PodmanDesktop
+        - io.github.celluloid_player.Celluloid
+        - cc.arduino.IDE2
+        - io.github.dvlv.boxbuddyrs
+        - org.godotengine.Godot
+        - com.prusa3d.PrusaSlicer
+        - com.github.GradienceTeam.Gradience
+        - fm.reaper.Reaper
+        - org.pipewire.Helvum
+        - page.codeberg.libre_menu_editor.LibreMenuEditor
+        - de.philippun1.turtle
+        # - org.famistudio.FamiStudio # NES music editor
+
+      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
+      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
+      # Installing different branches of the same Flatpak is not supported.
+      remove:
+
