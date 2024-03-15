@@ -7,40 +7,46 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
+        # Basic System Utilities
         - org.mozilla.firefox
-        - org.mozilla.Thunderbird
         - it.mijorus.gearlever
-        - org.kicad.KiCad
-        - org.gnome.Boxes
-        # - org.DolphinEmu.dolphin-emu
+        - io.github.flattool.Warehouse
+        - com.github.tchx84.Flatseal
+        - io.github.dvlv.boxbuddyrs
+        - io.missioncenter.MissionCenter
+        - page.codeberg.libre_menu_editor.LibreMenuEditor
+        
+        # Office and Such
+        - org.mozilla.Thunderbird
+        - org.libreoffice.LibreOffice
+        - com.discordapp.Discord
         - com.github.flxzt.rnote
         - com.obsproject.Studio
         - org.videolan.VLC
+        - io.github.celluloid_player.Celluloid
+        - org.pipewire.Helvum
+        
+        # Development and Creative
+        - org.kicad.KiCad
         - org.inkscape.Inkscape
         - org.blender.Blender
         - org.kde.krita
         - org.gimp.GIMP
-        - org.libreoffice.LibreOffice
-        - com.github.tchx84.Flatseal
+        - cc.arduino.IDE2
+        - org.godotengine.Godot
+        - com.prusa3d.PrusaSlicer
+        - fm.reaper.Reaper
+        
+        # Virtualization
+        - org.gnome.Boxes
         - com.usebottles.bottles
-        - io.missioncenter.MissionCenter
-        - io.github.flattool.Warehouse
-        - com.discordapp.Discord
+        
+        # Games
         - org.libretro.RetroArch
         - net.lutris.Lutris
         - com.valvesoftware.Steam
-        - io.podman_desktop.PodmanDesktop
-        - io.github.celluloid_player.Celluloid
-        - cc.arduino.IDE2
-        - io.github.dvlv.boxbuddyrs
-        - org.godotengine.Godot
-        - com.prusa3d.PrusaSlicer
-        - com.github.GradienceTeam.Gradience
-        - fm.reaper.Reaper
-        - org.pipewire.Helvum
-        - page.codeberg.libre_menu_editor.LibreMenuEditor
-        - de.philippun1.turtle
         # - org.famistudio.FamiStudio # NES music editor
+        # - org.DolphinEmu.dolphin-emu
 
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
