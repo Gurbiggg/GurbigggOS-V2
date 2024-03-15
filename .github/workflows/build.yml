@@ -22,7 +22,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
-          - recipes/silverblue-main.yml
+          - recipes/silverblue-framework.yml
+          - recipes/silverblue-legion.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
