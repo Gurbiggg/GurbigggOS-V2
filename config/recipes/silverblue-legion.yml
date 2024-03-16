@@ -17,7 +17,7 @@ modules:
                   # in /usr/etc/ in the image. read more in files module reference.
 
   - from-file: packages/gnome-flatpaks.yml
-  - from-file: packages/default-flatpaks.yml
+  - from-file: packages/common-flatpaks.yml
   - from-file: packages/rpms.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
