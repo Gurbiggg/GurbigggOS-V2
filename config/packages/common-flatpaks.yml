@@ -25,7 +25,7 @@ modules:
         - org.videolan.VLC
         - io.github.celluloid_player.Celluloid
         - org.pipewire.Helvum
-        - md.obsidain.Obdsidian
+        - md.obsidian.Obdsidian
 
         # Development and Creative
         - org.kicad.KiCad
