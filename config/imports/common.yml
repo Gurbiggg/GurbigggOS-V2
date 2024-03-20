@@ -1,0 +1,14 @@
+modules: 
+  - type: files
+    files:
+    - usr: /usr # copies config/files/usr into your image's /usr.
+                # put configuration files you want in /etc/ on a booted system 
+                # in /usr/etc/ in the image. read more in files module reference.
+  - type: systemd
+    system:
+      enabled:
+        - sshd.service
+
+  - from-file:
+    - packages/common-flatpaks.yml
+    - packages/common-rpms.yml

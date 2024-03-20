@@ -11,8 +11,9 @@ modules:
       - tlp
       - powertop
       - pip
+      - ansible
       
-      # kmods
+        # kmods
       - xone-kmod
       - xone-kmod-common
       - gcadapter_oc

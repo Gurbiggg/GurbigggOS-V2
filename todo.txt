@@ -1,0 +1,58 @@
+TO DO
+- create udev rules for 
+	- gcadapter
+ 	- arduino
+- add/debug nix installer to images
+- add bluebuild to the images for local rebuilding, move away from github for (potentially) faster rebuilds, use github for backups only
+- add gsettings overrides for 
+	- screen brightness
+	- keyboard shortcuts
+	- apps in folders
+	- gtk3-adw theming
+- add gnome-extensions cli program as a module and allow it to install via a yaml config ---- maybe do this in home-manager
+	- alphabetical-app-grid
+	- appindicators
+	- arcmenu *
+	- blur my shell
+	- caffeine
+	- dash to dock *
+	- dash to panel *
+	- forge *
+	- hot edge
+	- just perfection
+	- openbar* 
+	- removable drive menu
+	- vitals
+	- *: not necessary, but comment them into the file for later
+- install gtk3-adw theming if not already installed
+- add emacs to rpm install list 
+- enable sshd via the systemd services module
+- create configs
+	- neovim config
+	- emacs config
+	- nix config
+		- home-manager config file
+		- move most flatpaks and rpms to user packages
+		- move gnome configs to home-manager
+		- create "fix" program (fedora+nix) to simplify updates, build, rebuild, edit, etc.
+		- create softlink between .local/share/applications and .nix-profile/share/applications so that nix packages show up in the app grid
+	- enable mouse gestures in flatpak
+	- disable auto updates (or figure out how they work and change it to be less inconvenient)
+		- rpm-ostree
+		- flatpak
+		- distrobox 
+	- just automations
+		- add determinante nix update to just update
+		- create scripts in ~/.local/usr/bin for flatpak apps?
+- create bluebuild local build program, "blue", potentially a part of "fix"
+	- rebuild
+	- update
+	- rebase 
+- make image recipes more modular
+	- migrate common imports to their respective "loadout" files so imports are only "common" "flavor" and "device" 
+	- create custom local builds of ublue with a second github action, base device images off of those
+- make distrobox images
+	- fedora (main)
+	- ubuntu (backup)
+	- arch (testing, for fun mostly)
+-create kde images

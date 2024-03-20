@@ -1,0 +1,8 @@
+modules: 
+  - from file:
+    - packages/gnome-flatpaks.yml
+    - packages/gnome-rpms.yml
+  
+  - gschema-overrides:
+    
+
