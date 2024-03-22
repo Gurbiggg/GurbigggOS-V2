@@ -10,9 +10,8 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: imports/common.yml
-  - from-file: imports/gnome.yml
-
+  - from-file: packages/common-rpms.yml
+  - from-file: packages/gnome-flatpaks.yml
   
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

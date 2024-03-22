@@ -25,4 +25,4 @@ modules:
         - org.gnome.Weather
         - com.raggesilver.BlackBox
         - ca.desrt.dconf-editor
-      
+  - from-file: packages/common-flatpaks.yml

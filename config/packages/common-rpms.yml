@@ -7,7 +7,6 @@ modules:
     install:
       # - ptyxis # im having problems with it atm, ill add it back when its fixed/out of beta
       - neovim
-      - emacs
       - starship
       - tlp
       - powertop

@@ -9,6 +9,8 @@ TO DO
 	- keyboard shortcuts
 	- apps in folders
 	- gtk3-adw theming
+	- create profiles for host and "main distrobox"
+	- make keyboard shortcuts for terminals, 
 - add gnome-extensions cli program as a module and allow it to install via a yaml config ---- maybe do this in home-manager
 	- alphabetical-app-grid
 	- appindicators
@@ -24,16 +26,12 @@ TO DO
 	- removable drive menu
 	- vitals
 	- *: not necessary, but comment them into the file for later
-- install gtk3-adw theming if not already installed
-- add emacs to rpm install list 
 - enable sshd via the systemd services module
 - create configs
 	- neovim config
 	- emacs config
 	- nix config
 		- home-manager config file
-		- move most flatpaks and rpms to user packages
-		- move gnome configs to home-manager
 		- create "fix" program (fedora+nix) to simplify updates, build, rebuild, edit, etc.
 		- create softlink between .local/share/applications and .nix-profile/share/applications so that nix packages show up in the app grid
 	- enable mouse gestures in flatpak
