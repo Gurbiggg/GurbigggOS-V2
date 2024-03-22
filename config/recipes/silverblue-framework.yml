@@ -18,7 +18,7 @@ modules:
 
   - from-file: packages/gnome-flatpaks.yml
   - from-file: packages/common-flatpaks.yml
-  - from-file: packages/rpms.yml
+  - from-file: packages/common-rpms.yml
 
   - type: rpm-ostree
     remove:
