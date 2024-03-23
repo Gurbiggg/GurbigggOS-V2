@@ -23,7 +23,6 @@ modules:
         - com.github.flxzt.rnote
         - com.obsproject.Studio
         - org.videolan.VLC
-        - io.github.celluloid_player.Celluloid
         - org.pipewire.Helvum
         - md.obsidian.Obsidian
 
