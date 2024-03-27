@@ -18,6 +18,9 @@ modules:
 
   - from-file: packages/gnome-flatpaks.yml
   - from-file: packages/common-rpms.yml
+  - type: script
+    snippets: 
+    - "curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm"
 
   - type: rpm-ostree
     remove:
