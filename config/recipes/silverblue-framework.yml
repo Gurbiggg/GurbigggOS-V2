@@ -16,7 +16,7 @@ modules:
                   # put configuration files you want in /etc/ on a booted system 
                   # in /usr/etc/ in the image. read more in files module reference.
 
-  - from-file: packages/common-flatpaks.yml
+  - from-file: packages/gnome-flatpaks.yml
   - from-file: packages/common-rpms.yml
   
   - type: script

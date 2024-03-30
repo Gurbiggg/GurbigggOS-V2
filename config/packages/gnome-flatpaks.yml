@@ -1,6 +1,5 @@
 modules:
   - type: default-flatpaks
-    notify: true
     system:
       install:
         - org.gnome.Calculator
@@ -25,3 +24,5 @@ modules:
         - org.gnome.Weather
         - com.raggesilver.BlackBox
         - ca.desrt.dconf-editor
+
+  - from-file: common-flatpaks.yml
