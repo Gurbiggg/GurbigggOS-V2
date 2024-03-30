@@ -24,11 +24,15 @@ modules:
     snippet: export PATH="${PATH}:/nix/var/nix/profiles/default/bin"
 
   - type: systemd
-    disabled:
-      - power-profiles-daemon.service
-    enabled:
-      - tlp.service
-      - sshd.service
+    system:
+      disabled:
+        - power-profiles-daemon.service
+      enabled:
+        - tlp.service
+        - sshd.service
+      masked: 
+        - systemd-rfkill.service
+        - systemd-rfkill.socket
 
   - type: rpm-ostree
     remove:
