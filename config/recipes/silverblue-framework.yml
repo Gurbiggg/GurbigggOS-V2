@@ -19,10 +19,6 @@ modules:
   - from-file: packages/gnome-flatpaks.yml
   - from-file: packages/common-rpms.yml
   
-  - type: script
-    snippet: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install linux  --extra-conf "sandbox = false" --no-start-daemon --no-confirm
-    snippet: export PATH="${PATH}:/nix/var/nix/profiles/default/bin"
-
   - type: systemd
     system:
       disabled:
